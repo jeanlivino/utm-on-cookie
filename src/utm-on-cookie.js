@@ -37,7 +37,7 @@ class MarcadorCookie {
   }
   // get the source and add to cookie
   createCookie() {
-    if (!this.first_session) {
+    if (!this.first) {
       document.cookie = `jlh_first_session=${JSON.stringify(
         this.source,
       )}; expires=0; path=/`;
